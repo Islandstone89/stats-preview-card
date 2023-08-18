@@ -1,0 +1,120 @@
+
+/* COLORS
+Very dark blue: #090b1a
+Dark desurated blue: #1b1938
+Soft violet (accent): #aa5cdb
+
+Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+*/
+
+
+/* RESET */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #090b1a;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card {
+    width: 90%;
+    margin: 5em auto;
+    background-color: #1b1938;
+    border-radius: 10px;
+}
+
+
+.image {
+    background-image: url(images/image-header-mobile.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-overlay {
+    background-color: rgba(170, 92, 219, .5);
+    width: 100%;
+    height: 100vh;
+}
+
+.info {
+    padding: 2em;
+}
+
+.heading {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+}
+
+.text-accent {
+    color: #aa5cdb;
+}
+
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+.numbers {
+    margin: 3em 0;
+    line-height: 1.6;
+}
+
+.numbers__text {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 1.5em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 900px) {
+    .card {
+        display: flex;
+        width: 80%;
+        margin: 5em auto;
+        text-align: left;
+    }
+
+    .image {
+        order: 1;
+    }
+
+    .info {
+        padding: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .intro {
+        padding-top: 4em;
+    }
+
+    .intro-heading {
+        margin-bottom: 1.4em;
+        font-size: 1.8rem;
+    }
+
+    .numbers {
+        display: flex;
+        gap: 4em;    
+    }
+}
